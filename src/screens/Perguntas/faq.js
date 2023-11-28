@@ -11,13 +11,13 @@ export default function FaqPage(){
             <Link href="/"
                         styleSheet={{
                         color: theme.colors.primary[400],
-                        fontWeight: '500',
+                        fontWeight: '900',
                         hover: {
                             color: theme.colors.primary[300],
                         },
                         }}
                         >
-                            Ir para home
+                            Voltar para home
                     </Link>
             <Box 
                 styleSheet={{
