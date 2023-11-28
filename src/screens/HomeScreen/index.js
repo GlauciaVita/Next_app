@@ -2,6 +2,7 @@ import Footer from '../../componentes/patterns/Footer';
 import Link from '../../componentes/Link';
 import { theme } from '../../themes/theme';
 import { Image, Box, Text, Icon, Input, Button } from '../../themes/components';
+import Head from 'next/head';
 
 const LOGO_NEXTJS_URL = '/images/next-js.png';
 const SIDE_IMAGE_URL = '/images/react-vs-next.jpg'
@@ -93,6 +94,9 @@ function SideImage() {
 export default function HomeScreen() {
   return (
     <Box>
+      <Head>
+        <title>Home</title>
+      </Head>
       <Box
         as="main"
         styleSheet={{
@@ -201,29 +205,17 @@ export default function HomeScreen() {
               <Box
               styleSheet={{
                 marginTop: {
-                  xs: theme.space.x16,
-                  sm: theme.space.x20,
+                  xs: theme.space.x10,
+                  sm: theme.space.x10,
                 },
               }}
-            >
-              <Box>
+              >
                 <Link
                   href="/faq"
-                  styleSheet={{
-                    display: "inline-flex",
-                    alignItems: {
-                      xs: "flex-start",
-                      sm: "center",
-                    },
-                    flexDirection: {
-                      xs: "column",
-                      sm: "row",
-                    },
-                  }}
                   >
                   <Text
                     styleSheet={{
-                      textVariant: theme.typography.variants.body4,
+                      textVariant: theme.typography.variants.body2,
                       fontWeight: "600",
                       display: 'inline-flex',
                       borderRadius: theme.space.x64,
@@ -231,20 +223,19 @@ export default function HomeScreen() {
                       alignItems: 'center',
                     }}
                   >
-                    <Text>Confira as principais dúvidas</Text>
-                    <Icon
+                    <Text>Confira as principais dúvidas {'>>'} </Text>
+                    {/* <Icon
                       styleSheet={{
                         iconVariant: 'chevronRight',
                         marginLeft: theme.space.xpx,
                       }}
                       aria-hidden="true"
-                    />
+                    /> */}
                   </Text>
                 </Link>
-              </Box>
               <Box
                 styleSheet={{
-                  marginTop: theme.space.x6,
+                  marginTop: theme.space.x5,
                   maxWidth: theme.space.xcontainer_sm,
                 }}
                 >

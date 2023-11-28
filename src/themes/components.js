@@ -161,8 +161,9 @@ export function Icon({ as, styleSheet, ...props }) {
       icon={iconSet[`fa${capitalize(iconVariant)}`]}
       crossOrigin="anonymous"
       styleSheet={{
-        width: '1.5ch',
-        height: '1.5ch',
+        fontSize: "1px",
+        width: '0.5ch',
+        height: '0.5ch',
         ...styleSheetUpdated
       }}
       {...props}

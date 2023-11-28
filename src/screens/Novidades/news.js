@@ -1,9 +1,13 @@
 import { Box, Text } from "../../themes/components"
 import { theme } from "../../themes/theme"
 import Link from "../../componentes/Link"
+import Head from "next/head"
 export default function News(){
     return(
         <Box>
+          <Head>
+            <title>Novidades</title>
+          </Head>
             <Link href="/">
                 Ir para home
             </Link>

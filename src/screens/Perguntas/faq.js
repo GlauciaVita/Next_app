@@ -1,9 +1,13 @@
 import { Box, Text } from "../../themes/components"
 import { theme } from "../../themes/theme"
 import Link from "../../componentes/Link"
+import Head from "next/head"
 export default function FaqPage(){
     return(
         <Box>
+            <Head>
+                <title>Perguntas</title>
+            </Head>
             <Link href="/">
                 Ir para home
             </Link>
