@@ -8,9 +8,51 @@ export default function News(){
           <Head>
             <title>Novidades</title>
           </Head>
-            <Link href="/">
-                Ir para home
-            </Link>
+          <Link href="/"
+                      styleSheet={{
+                      color: theme.colors.primary[400],
+                      fontWeight: '500',
+                      hover: {
+                          color: theme.colors.primary[300],
+                      },
+                      }}
+                      >
+                          Ir para home
+                  </Link>
+          <Box 
+              styleSheet={{
+              display: "grid",
+              gridTemplateColumns: {
+              lg: "repeat(3,minmax(0,1fr))",
+              },
+              gap: {
+              lg: theme.space.x3,
+              }
+              }}
+              >
+              <Box>
+                  <Text
+                  as="h2"
+                  styleSheet={{
+                  textVariant:theme.typography.variants.heading3,
+                  color:theme.colors.neutral[900],
+                  }}
+                  >
+                  Confira aqui as novidades de Next.js
+                  </Text>
+                  
+              </Box>
+              <Box
+                    styleSheet={{
+                    marginTop: {
+                        xs: theme.space.x12,
+                        lg: theme.space.x0,
+                    },
+                    gridColumn: {
+                        lg: "span 2 / span 2;",
+                    }
+                    }}
+                    >
             <Box
                 styleSheet={{
                     marginTop: theme.space.x6,
@@ -21,7 +63,7 @@ export default function News(){
                 <Text
                     as="h2"
                     styleSheet={{
-                        textVariant: theme.typography.variants.heading2,
+                        textVariant: theme.typography.variants.heading3,
                         color: theme.colors.primary["400"],
                     }}
                 >
@@ -30,12 +72,12 @@ export default function News(){
                 <Text
                     as="p"
                     styleSheet={{
-                        textVariant: theme.typography.variants.body1,
+                        textVariant: theme.typography.variants.body2,
                         color: theme.colors.neutral["500"],
                         marginTop: theme.space.x1,
                     }}
                 >
-                    Conforme anunciamos na Next.js Conf, Next.js 14 é nosso lançamento mais focado com:
+                    Conforme anunciado na Next.js Conf, Next.js 14 é o lançamento mais focado com:
                     Turbopack : 5.000 testes aprovados para App & Pages Router
                     Inicialização de servidor local 53% mais rápida
                     Atualizações de código 94% mais rápidas com Fast Refresh
@@ -89,7 +131,7 @@ export default function News(){
                 <Text
                     as="h2"
                     styleSheet={{
-                        textVariant: theme.typography.variants.heading2,
+                        textVariant: theme.typography.variants.heading3,
                         color: theme.colors.primary["400"],
                     }}
                 >
@@ -98,7 +140,7 @@ export default function News(){
                 <Text
                     as="p"
                     styleSheet={{
-                        textVariant: theme.typography.variants.body1,
+                        textVariant: theme.typography.variants.body2,
                         color: theme.colors.neutral["500"],
                         marginTop: theme.space.x6,
                     }}
@@ -152,7 +194,7 @@ export default function News(){
                 <Text
                     as="h2"
                     styleSheet={{
-                        textVariant: theme.typography.variants.heading2,
+                        textVariant: theme.typography.variants.heading3,
                         color: theme.colors.primary["400"],
                     }}
                 >
@@ -161,7 +203,7 @@ export default function News(){
                 <Text
                     as="p"
                     styleSheet={{
-                        textVariant: theme.typography.variants.body1,
+                        textVariant: theme.typography.variants.body2,
                         color: theme.colors.neutral["500"],
                         marginTop: theme.space.x6,
                     }}
@@ -208,6 +250,8 @@ export default function News(){
                     </Link>
                 </Text>
             </Box>
+        </Box>
+        </Box>
         </Box>
     )
 }

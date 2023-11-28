@@ -115,8 +115,8 @@ export default function HomeScreen() {
               sm: theme.space.x12,
             },
             paddingVertical: {
-              md: theme.space.x20,
-              lg: theme.space.x24,
+              md: theme.space.x10,
+              lg: theme.space.x14,
             },
           }}
         >
@@ -152,7 +152,7 @@ export default function HomeScreen() {
                 <Image
                   styleSheet={{
                     width: "auto",
-                    height: theme.space.x11,
+                    height: theme.space.x16,
                   }}
                   src={LOGO_NEXTJS_URL}
                   alt="Logo Nextjs"
@@ -161,8 +161,8 @@ export default function HomeScreen() {
               <Box
                 styleSheet={{
                   marginTop: {
-                    xs: theme.space.x16,
-                    sm: theme.space.x20,
+                    xs: theme.space.x6,
+                    sm: theme.space.x6,
                   },
                 }}
               >
@@ -205,8 +205,8 @@ export default function HomeScreen() {
               <Box
               styleSheet={{
                 marginTop: {
-                  xs: theme.space.x10,
-                  sm: theme.space.x10,
+                  xs: theme.space.x6,
+                  sm: theme.space.x6,
                 },
               }}
               >
@@ -224,13 +224,6 @@ export default function HomeScreen() {
                     }}
                   >
                     <Text>Confira as principais dúvidas {'>>'} </Text>
-                    {/* <Icon
-                      styleSheet={{
-                        iconVariant: 'chevronRight',
-                        marginLeft: theme.space.xpx,
-                      }}
-                      aria-hidden="true"
-                    /> */}
                   </Text>
                 </Link>
               <Box
@@ -296,7 +289,7 @@ export default function HomeScreen() {
                       sm: theme.space.x0,
                     },
                     marginLeft: {
-                      sm: theme.space.x3,
+                      sm: theme.space.x0,
                     },
                   }}
                 >
@@ -329,7 +322,6 @@ export default function HomeScreen() {
               </Box>
             </Box>
           </Box>
-
           <SideImage />
         </Box>
       </Box>
